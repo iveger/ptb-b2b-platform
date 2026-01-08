@@ -1,0 +1,49 @@
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === IDE / Editors ===
+.idea/
+.vscode/
+*.swp
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# === Logs ===
+*.log
+
+# === Environment variables ===
+.env
+.env.*
+
+# === Build / cache ===
+build/
+dist/
+*.egg-info/
+
+# === Temporary files ===
+tmp/
+temp/
+
+# === 1C / Integrations ===
+*.epf
+*.erf
+*.dt
+*.cf
+*.cfe
+
+# === AI / Models ===
+models/
+checkpoints/
+*.bin
+*.gguf
+*.safetensors
+
+# === Secrets ===
+secrets/
