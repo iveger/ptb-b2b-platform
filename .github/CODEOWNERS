@@ -1,0 +1,18 @@
+# Global owner
+* @iveger
+
+# Documentation
+/docs/ @iveger
+
+# Backend
+/backend/ @iveger
+
+# Integrations
+/integrations/ @iveger
+
+# AI modules
+/ai/ @iveger
+
+# Infrastructure
+/.github/ @iveger
+/scripts/ @iveger
