@@ -72,3 +72,29 @@ The platform acts as:
 - A data validation and enrichment component
 
 Any functionality outside these boundaries must be implemented in external systems.
+
+## Module Responsibilities
+
+### Integrations Layer
+- Owns communication with external systems
+- Handles protocol translation and data normalization
+- Does NOT contain business logic
+- Does NOT make decisions
+
+### Backend Layer
+- Owns business rules and workflows
+- Acts as the single source of truth
+- Validates and persists data
+- Coordinates interactions between modules
+
+### AI Layer
+- Provides analytical and assistive capabilities
+- Generates recommendations and insights
+- Does NOT initiate state changes
+- Does NOT act without backend confirmation
+
+### Infrastructure Layer
+- Owns deployment, automation, and maintenance
+- Provides observability and logging
+- Does NOT influence business logic
+
