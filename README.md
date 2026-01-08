@@ -15,15 +15,10 @@ The repository is intended for internal use and structured to support long-term 
 ## Repository Structure
 
 /docs Project documentation and architectural decisions
-
 /backend Backend services and APIs
-
 /integrations External system integrations
-
 /ai AI modules and assistants
-
 /scripts Utility scripts and automation
-
 /.github CI/CD and repository configuration
 
 
