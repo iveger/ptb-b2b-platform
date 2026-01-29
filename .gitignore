@@ -11,9 +11,19 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 *.pyo
+
+# === Virtual Environments ===
 .venv/
 venv/
 env/
+backend/.venv/
+
+# === Python tooling ===
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
 # === Logs ===
 *.log
@@ -21,15 +31,23 @@ env/
 # === Environment variables ===
 .env
 .env.*
+!.env.example
 
 # === Build / cache ===
 build/
 dist/
 *.egg-info/
 
+# === Databases ===
+*.sqlite3
+*.db
+
 # === Temporary files ===
 tmp/
 temp/
+
+# === FastAPI / Uvicorn ===
+*.pid
 
 # === 1C / Integrations ===
 *.epf

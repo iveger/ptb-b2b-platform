@@ -1,7 +1,11 @@
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
+
 
 class Settings(BaseSettings):
-    app_name: str = "ptb-b2b-platform"
-    environment: str = "local"
+    PROJECT_NAME: str = "ptp-b2b-backend"
+    VERSION: str = "0.1.0"
+    ENV: str = "dev"
+    DEBUG: bool = True
+
 
 settings = Settings()
