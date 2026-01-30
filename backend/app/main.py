@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-
 from app.core.config import settings
+from app.core.lifecycle import on_startup, on_shutdown
 from app.api.v1.router import api_router
 
 
@@ -12,6 +12,9 @@ def create_app() -> FastAPI:
         docs_url="/docs",
         redoc_url="/redoc",
     )
+
+    app.add_event_handler("startup", on_startup)
+    app.add_event_handler("shutdown", on_shutdown)
 
     app.include_router(api_router, prefix=settings.API_V1_STR)
 
