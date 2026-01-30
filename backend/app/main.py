@@ -16,6 +16,10 @@ def create_app() -> FastAPI:
     app.add_event_handler("startup", on_startup)
     app.add_event_handler("shutdown", on_shutdown)
 
+    @app.get("/health", tags=["health"])
+    def root_health():
+        return {"status": "ok"}
+
     app.include_router(api_router, prefix=settings.API_V1_STR)
 
     return app
